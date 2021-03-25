@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2020/11 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="基于 SSM 框架的 Web 系统研究与应用SSM框架 包含四个系统应用层，如表示层、控制层、服务层以及数据库访问层。SSM框架结构及应用SpringMVC框架 当操作人员向服务器发送请求时，Spring 前端控制器会第一时间捕获请求，并对请求信息中的 UR 进行详细的分析，进以利用 HandlerMapping 来配置与之相关的数据信息，如：HandlerAdapter。然后还要对 Reques">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2020/11/index.html">
+<meta property="og:url" content="http://example.com/2020/11/21/SSM/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="基于 SSM 框架的 Web 系统研究与应用SSM框架 包含四个系统应用层，如表示层、控制层、服务层以及数据库访问层。SSM框架结构及应用SpringMVC框架 当操作人员向服务器发送请求时，Spring 前端控制器会第一时间捕获请求，并对请求信息中的 UR 进行详细的分析，进以利用 HandlerMapping 来配置与之相关的数据信息，如：HandlerAdapter。然后还要对 Reques">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2020/11/21/SSM/SSM.PNG">
+<meta property="og:image" content="http://example.com/2020/11/21/SSM/MyBatis%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.PNG">
+<meta property="article:published_time" content="2020-11-20T16:52:37.258Z">
+<meta property="article:modified_time" content="2020-11-20T18:05:37.773Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2020/11/21/SSM/SSM.PNG">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,118 +157,165 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-SSM" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="基于-SSM-框架的-Web-系统研究与应用"><a href="#基于-SSM-框架的-Web-系统研究与应用" class="headerlink" title="基于 SSM 框架的 Web 系统研究与应用"></a>基于 SSM 框架的 Web 系统研究与应用</h1><h2 id="SSM框架"><a href="#SSM框架" class="headerlink" title="SSM框架"></a>SSM框架</h2><ul>
+<li>包含四个系统应用层，如表示层、控制层、服务层以及数据库访问层。<h2 id="SSM框架结构及应用"><a href="#SSM框架结构及应用" class="headerlink" title="SSM框架结构及应用"></a>SSM框架结构及应用</h2><h3 id="SpringMVC框架"><a href="#SpringMVC框架" class="headerlink" title="SpringMVC框架"></a>SpringMVC框架</h3></li>
+<li>当操作人员向服务器发送请求时，Spring 前端控制器会第一时间捕获请求，并对请求信息中的 UR 进行详细的分析，进以利用 HandlerMapping 来配置与之相关的数据信息，如：HandlerAdapter。然后还要对 Request 请求中的相关数据进行提取，并将其填入到 Handler 信息中，以便可以顺利启动Handler。最后，当 Handler 执行完成后，还会给 ispatcherServlet返回一个 ModelAndView 对象，根据该对象就可择优出一个 Dispatchers ervlet 进行处理，这样就会形成 ViewResolver 与ModelandView 相结合的渲染视图，进以呈现在屏幕上供操作者使用。</li>
+</ul>
+<p><img src="/2020/11/21/SSM/SSM.PNG" alt="SSM"></p>
+<h3 id="Mybatis框架"><a href="#Mybatis框架" class="headerlink" title="Mybatis框架"></a>Mybatis框架</h3><ul>
+<li>由 DAO 与 SQLMap 组件所构成，其中，DAO 组件主要负责抽象 Web 系统中数据访问层以及持久层，进以让系统开发人员能够按照该组件设计模式进行系统设计。而 SQL Map 组件则负责配置各种 statement，采用配置 xml 或注解的方式来进行，并通过 java 对象和 statement 中的 sql 映射功能来生成完整的 sql 语句，然后再经由 mybatis 框架的执行映射，将sql 转化成所需的 java 对象，返回到系统开发人员手中。<h3 id="Spring框架"><a href="#Spring框架" class="headerlink" title="Spring框架"></a>Spring框架</h3></li>
+<li>该框架结构可以帮助一些大型企业解决一些繁琐、难度较高的 Web 系统问题。Spring 框架主要采用了面向切面编程，能够有效控制反转机制、整合多种持久层框架资源，如：表现层、业务层、持久层。并且拥有独立的 MVC 框架。其在 Web 系统开发中主要为系统应用提供 JavaEE 各层的解决方案</li>
+</ul>
+<h1 id="基于-MyBatis-和-Spring-的-JavaEE-数据持久层的研究与应用"><a href="#基于-MyBatis-和-Spring-的-JavaEE-数据持久层的研究与应用" class="headerlink" title="基于 MyBatis 和 Spring 的 JavaEE 数据持久层的研究与应用"></a>基于 MyBatis 和 Spring 的 JavaEE 数据持久层的研究与应用</h1><h2 id="一种基于Spring和JAVA注解方法的解决方案"><a href="#一种基于Spring和JAVA注解方法的解决方案" class="headerlink" title="一种基于Spring和JAVA注解方法的解决方案"></a>一种基于Spring和JAVA注解方法的解决方案</h2><h3 id="MyBatis执行原理"><a href="#MyBatis执行原理" class="headerlink" title="MyBatis执行原理"></a>MyBatis执行原理</h3><ul>
+<li>应用程序调用相对应函数（一般和操作ID相同），传入指定参数。</li>
+<li>读取XML配置文件，被调用的程序通过Sq1Map-Config.xml以及操作对象名称找到对应的XML配置文件。</li>
+<li>程序将对象和配置文件载入内存中。</li>
+<li>查找到对应ID的SQL语句。</li>
+<li>带入参数，程序根据映射文件映射的关系将传入对象的属性替换成相对应的SQL所需要的参数值。</li>
+<li>执行SQL语句，将替换完参数的SQL语句通过驱动程序传入数据库管理系统中执行。</li>
+<li>返回结果，根据XML文件中对应操作ID配置的返回类型，将执行SQL语句后的结果返回给应用程序。</li>
+</ul>
+<p><img src="/2020/11/21/SSM/MyBatis%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.PNG" alt="MyBatis执行原理"></p>
+<h3 id="设计思路"><a href="#设计思路" class="headerlink" title="设计思路"></a>设计思路</h3><ul>
+<li>让程序在运行中自动找到相对应的XML配置文件<ul>
+<li>为了让JAVA应用程序在运行的过程中动态获取到这个对象实体在XML映射文件中配置的SQL语句，可以使用JAVA的反射功能和JAVA的注解功能来实现。事先需要在每个POJO对象类上增加一个自定义注解，注解上标明该对象所对应的XML映射文件名称、主键名称、不需要查询的列名称以及其他需要的信息，然后使用JAVA的反射功能，让应用程序在JAVA虚拟机运行的过程中获得该对象对应的XML文件名称，通过查找文件内容找到某次操作对应的SQL语句。</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/11/21/SSM/" class="archive-article-date">
-  	<time datetime="2020-11-20T16:52:37.258Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-21</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/11/21/SSM/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/11/09/HTML/" class="archive-article-date">
-  	<time datetime="2020-11-09T07:47:51.456Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-09</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/11/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/" class="archive-article-date">
-  	<time datetime="2020-11-06T09:33:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-06</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/11/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/">我的第一篇博文</a>
-    </h1>
+  
+    <a href="/2020/11/09/HTML/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/11/06/hello-world/" class="archive-article-date">
-  	<time datetime="2020-11-06T09:21:52.848Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/11/06/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -284,8 +338,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
