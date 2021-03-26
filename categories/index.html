@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>WSKCODE</title>
+  <title>文章分类 | WSKCODE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="会当凌绝顶">
 <meta property="og:type" content="website">
-<meta property="og:title" content="WSKCODE">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:title" content="文章分类">
+<meta property="og:url" content="http://example.com/categories/index.html">
 <meta property="og:site_name" content="WSKCODE">
 <meta property="og:description" content="会当凌绝顶">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-03-26T02:57:14.000Z">
+<meta property="article:modified_time" content="2021-03-26T03:19:19.809Z">
 <meta property="article:author" content="WSK">
 <meta name="twitter:card" content="summary">
   
@@ -158,177 +160,117 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-HTML_p" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/23/HTML_p/">HTML练习</a>
+    <h1 class="article-title" itemprop="name">
+      文章分类
     </h1>
   
 
         
-        <a href="/2021/03/23/HTML_p/" class="archive-article-date">
-  	<time datetime="2021-03-23T03:07:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-23</time>
+        <a href="/categories/index.html" class="archive-article-date">
+  	<time datetime="2021-03-26T02:57:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#表格的添加和删除<br>##实现效果<br><a href="HTML/table.html">HTML/table.html</a><br>##练习代码</p>
-<pre><code>`
-&lt;head&gt;
-&lt;title&gt;Test&lt;/title&gt;
-&lt;style&gt;
-    table &#123;
-        border: 1px solid;
-        margin: auto;
-        width: 500px;
-    &#125;
-
-    td,
-    th &#123;
-        border: 1px solid;
-        text-align: center;
-    &#125;
-
-    div &#123;
-        text-align: center;
-        margin: 50px;
-    &#125;
-&lt;/style&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;div&gt;
-    &lt;input type=&quot;text&quot; id=&quot;0&quot; placeholder=&quot;请输入编号&quot;&gt;
-    &lt;input type=&quot;text&quot; id=&quot;1&quot; placeholder=&quot;请输入名字&quot;&gt;
-    &lt;input type=&quot;text&quot; id=&quot;2&quot; placeholder=&quot;请输入年龄&quot;&gt;
-    &lt;input type=&quot;button&quot; id=&quot;btn_add&quot; value=&quot;添加&quot;&gt;
-
-&lt;/div&gt;
-&lt;table id=&quot;table_1&quot;&gt;
-    &lt;caption&gt;信息表&lt;/caption&gt;
-    &lt;tr&gt;
-        &lt;th&gt;编号&lt;/th&gt;
-        &lt;th&gt;姓名&lt;/th&gt;
-        &lt;th&gt;年龄&lt;/th&gt;
-        &lt;th&gt;操作&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;1&lt;/td&gt;
-        &lt;td&gt;张三&lt;/td&gt;
-        &lt;td&gt;20&lt;/td&gt;
-        &lt;td&gt;
-            &lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;del_tr(this)&quot;&gt;删除&lt;/a&gt;
-        &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;李四&lt;/td&gt;
-        &lt;td&gt;21&lt;/td&gt;
-        &lt;td&gt;
-            &lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;del_tr(this)&quot;&gt;删除&lt;/a&gt;
-        &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;王五&lt;/td&gt;
-        &lt;td&gt;22&lt;/td&gt;
-        &lt;td&gt;
-            &lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;del_tr(this)&quot;&gt;删除&lt;/a&gt;
-        &lt;/td&gt;
-    &lt;/tr&gt;
-
-&lt;/table&gt;
-
-&lt;script&gt;
-    document.getElementById(&quot;btn_add&quot;).onclick = function () &#123;
-        var tr = document.createElement(&quot;tr&quot;);
-        for (var i = 0; i &lt; 3; i++) &#123;
-            var td = document.createElement(&quot;td&quot;);
-            td.appendChild(document.createTextNode(document.getElementById(i+&quot;&quot;).value));
-            tr.appendChild(td);
-        &#125;
-
-        var a = document.createElement(&quot;a&quot;);
-        a.setAttribute(&quot;href&quot;, &quot;javascript:void(0);&quot;);
-        a.setAttribute(&quot;onclick&quot;, &quot;del_tr(this)&quot;);
-        a.appendChild(document.createTextNode(&quot;删除&quot;));
-        var td_a = document.createElement(&quot;td&quot;);
-        td_a.appendChild(a);
-
-
-        tr.appendChild(td_a);
-        var table = document.getElementById(&quot;table_1&quot;);
-        table.appendChild(tr);
-    &#125;
-    function del_tr(obj) &#123;
-        var table = obj.parentNode.parentNode.parentNode;
-        var tr = obj.parentNode.parentNode;
-        table.removeChild(tr);
-    &#125;
-
-&lt;/script&gt;
-&lt;/body&gt;
-
-  `</code></pre>
-
+        
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">练习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/练//" class="article-tag-list-link color2">练</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/练/HTML//" class="article-tag-list-link color5">HTML</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/23/HTML_p/">展开全文 >></a>
-        </p>
       
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/categories/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -347,10 +289,6 @@
 </aside>
 
 
-
-
-  
-  
 
 
           </div>
@@ -372,7 +310,7 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
 		isArchive: false,
 		isTag: false,
