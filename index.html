@@ -160,6 +160,152 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Vue_01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/03/27/Vue_01/">Vue随笔</a>
+    </h1>
+  
+
+        
+        <a href="/2021/03/27/Vue_01/" class="archive-article-date">
+  	<time datetime="2021-03-27T05:07:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Vue</strong></p>
+<ul>
+<li>Vue是一个渐进式框架</li>
+<li>Vue使用声明式编程（不同于命令式编程，与react相似）</li>
+<li>Vue可实现响应式界面</li>
+</ul>
+<p><strong>简单的列表</strong></p>
+<pre><code>`
+&lt;body&gt;
+&lt;div id=&#39;app&#39;&gt;
+    &lt;ui&gt;
+        &lt;li v-for=&quot;item in movie&quot;&gt;&#123;&#123;item&#125;&#125;&lt;/li&gt;
+    &lt;/ui&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    const app = new Vue(&#123;
+        el: &#39;#app&#39;,
+        data: &#123;
+            movie: [&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;],
+        &#125;
+    &#125;)
+&lt;/script&gt;
+&lt;/body&gt;
+`</code></pre>
+<p><strong>简单的计数器</strong></p>
+<pre><code>`
+&lt;body&gt;
+&lt;div id=&#39;app&#39;&gt;
+  &lt;h2&gt;当前计数：&#123;&#123;counter&#125;&#125;&lt;/h2&gt;
+  &lt;button v-on:click=&#39;add&#39;&gt;+&lt;/button&gt;
+  &lt;button v-on:click=&#39;sub&#39;&gt;-&lt;/button&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    const app = new Vue(&#123;
+        el: &#39;#app&#39;,
+        data: &#123;
+            counter: 0,
+        &#125;,
+        methods: &#123;
+        add:function()&#123;console.log(&#39;加1&#39;),this.counter++&#125;,
+        sub:function()&#123;console.log(&#39;减1&#39;),this.counter--&#125; 
+        &#125;
+    &#125;)
+&lt;/script&gt;
+&lt;/body&gt;
+`</code></pre>
+<p><strong>MVVM</strong><br>MVVM旨在利用WPF中的数据绑定函数，通过从视图层中几乎删除所有GUI代码（代码隐藏），更好地促进视图层开发与模式其余部分的分离。<br>MVVM分为三个部分：分别是M（Model，模型层 ），V（View，视图层），VM（ViewModel，V与M连接的桥梁，也可以看作为控制器）  </p>
+<ul>
+<li>1、 M：模型层，主要负责业务数据相关；</li>
+<li>2、 V：视图层，顾名思义，负责视图相关，细分下来就是html+css层；</li>
+<li>3、 VM：V与M沟通的桥梁，负责监听M或者V的修改，是实现MVVM双向绑定的要点；</li>
+</ul>
+<img src="/2021/03/27/Vue_01/vue_01.png" class>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/随笔/Vue//" class="article-tag-list-link color4">Vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/03/27/Vue_01/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-HTML_p" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -180,7 +326,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#表格的添加和删除<br>##实现效果<br><a href="HTML/table.html">HTML/table.html</a><br>##练习代码</p>
+        <p><strong>表格的添加和删除</strong><br><strong>实现效果</strong><br><a href="HTML/table.html">HTML/table.html</a><br><strong>练习代码</strong></p>
 <pre><code>`
 &lt;head&gt;
 &lt;title&gt;Test&lt;/title&gt;
@@ -448,6 +594,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">练习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
