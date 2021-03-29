@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>WSKCODE</title>
+  <title>Vue随笔-ES6常用语法 | WSKCODE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="会当凌绝顶">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WSKCODE">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="var和let var没有块作用域但有函数作用域，可以用函数闭包解决 let有if和for的块级作用域 闭包的应用场景： 保护函数内的变量安全 在内存中维持一个变量。 通过保护变量的安全实现js私有属性和私有方法（不能被外部访问） 按钮闭包示例：    &#96;&lt;body&gt;  &lt;button&gt;按钮&lt;&#x2F;button&gt;  &lt;button&gt;按钮&lt;&#x2F;butt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue随笔-ES6常用语法">
+<meta property="og:url" content="http://example.com/2021/03/28/Vue_03/index.html">
 <meta property="og:site_name" content="WSKCODE">
-<meta property="og:description" content="会当凌绝顶">
+<meta property="og:description" content="var和let var没有块作用域但有函数作用域，可以用函数闭包解决 let有if和for的块级作用域 闭包的应用场景： 保护函数内的变量安全 在内存中维持一个变量。 通过保护变量的安全实现js私有属性和私有方法（不能被外部访问） 按钮闭包示例：    &#96;&lt;body&gt;  &lt;button&gt;按钮&lt;&#x2F;button&gt;  &lt;button&gt;按钮&lt;&#x2F;butt">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-03-28T13:07:09.000Z">
+<meta property="article:modified_time" content="2021-03-29T14:20:10.405Z">
 <meta property="article:author" content="WSK">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="WSKCODE" type="application/atom+xml">
@@ -158,16 +162,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Vue_03" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Vue_03" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/28/Vue_03/">Vue随笔-ES6常用语法</a>
+    <h1 class="article-title" itemprop="name">
+      Vue随笔-ES6常用语法
     </h1>
   
 
@@ -220,115 +222,26 @@ for(var i=0;i&lt;btns.length;i++)&#123;
       
 
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/随笔/Vue//" class="article-tag-list-link color4">Vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/28/Vue_03/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Vue_02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/27/Vue_02/">Vue随笔-插值操作</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/27/Vue_02/" class="archive-article-date">
-  	<time datetime="2021-03-27T14:07:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>mustache语法</strong></p>
-<ul>
-<li>双大括号</li>
-<li>可以使用表达式undefined undefined</li>
-<li>或 </li>
-<li>不能在标签属性中使用</li>
-</ul>
-<p>** v-once**<br>只显示第一次数据值，不会发生改变<br><strong>v-html</strong><br>解析一个html语句<br><strong>v-text</strong><br>等同于mustache语法，不能再加入字符串会覆盖其它内容，一般不使用。<br><strong>v-pre</strong><br>不解析mustache语法<br><strong>v-cloak</strong><br>在vue未渲染前隐藏代码<br><strong>v-bind</strong></p>
-<ul>
-<li>在标签属性中解析vue对象的属性值  </li>
-<li>语法糖：直接加冒号省略v-bind</li>
-<li>当绑定样式时需要对样式内容加’’</li>
-</ul>
-<p><strong>计算属性</strong></p>
-<ul>
-<li>拼接或计算不同的属性，性能比methods较好。（计算属性中的函数类似构造函数，<em>？构造对象vue时运行</em>计算后结果会储存在计算属性中）</li>
-<li>计算属性有setter和getter，一般省略setter：计算属性：function(){}</li>
-</ul>
-
-      
-
       
     </div>
     <div class="article-info article-info-index">
@@ -367,16 +280,75 @@ for(var i=0;i&lt;btns.length;i++)&#123;
 
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/27/Vue_02/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/03/28/Vue_03/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2021/03/27/Vue_02/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Vue随笔-插值操作</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -391,352 +363,32 @@ for(var i=0;i&lt;btns.length;i++)&#123;
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Vue_01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/27/Vue_01/">Vue随笔</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/27/Vue_01/" class="archive-article-date">
-  	<time datetime="2021-03-27T05:07:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>Vue</strong></p>
-<ul>
-<li>Vue是一个渐进式框架</li>
-<li>Vue使用声明式编程（不同于命令式编程，与react相似）</li>
-<li>Vue可实现响应式界面</li>
-</ul>
-<p><strong>简单的列表</strong></p>
-<pre><code>`
-&lt;body&gt;
-&lt;div id=&#39;app&#39;&gt;
-    &lt;ui&gt;
-        &lt;li v-for=&quot;item in movie&quot;&gt;&#123;&#123;item&#125;&#125;&lt;/li&gt;
-    &lt;/ui&gt;
-&lt;/div&gt;
-&lt;script src=&quot;../vue.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-    const app = new Vue(&#123;
-        el: &#39;#app&#39;,
-        data: &#123;
-            movie: [&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;],
-        &#125;
-    &#125;)
-&lt;/script&gt;
-&lt;/body&gt;
-`</code></pre>
-<p><strong>简单的计数器</strong></p>
-<pre><code>`
-&lt;body&gt;
-&lt;div id=&#39;app&#39;&gt;
-  &lt;h2&gt;当前计数：&#123;&#123;counter&#125;&#125;&lt;/h2&gt;
-  &lt;button v-on:click=&#39;add&#39;&gt;+&lt;/button&gt;
-  &lt;button v-on:click=&#39;sub&#39;&gt;-&lt;/button&gt;
-&lt;/div&gt;
-&lt;script src=&quot;../vue.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-    const app = new Vue(&#123;
-        el: &#39;#app&#39;,
-        data: &#123;
-            counter: 0,
-        &#125;,
-        methods: &#123;
-        add:function()&#123;console.log(&#39;加1&#39;),this.counter++&#125;,
-        sub:function()&#123;console.log(&#39;减1&#39;),this.counter--&#125; 
-        &#125;
-    &#125;)
-&lt;/script&gt;
-&lt;/body&gt;
-`</code></pre>
-<p><strong>MVVM</strong><br>MVVM旨在利用WPF中的数据绑定函数，通过从视图层中几乎删除所有GUI代码（代码隐藏），更好地促进视图层开发与模式其余部分的分离。<br>MVVM分为三个部分：分别是M（Model，模型层 ），V（View，视图层），VM（ViewModel，V与M连接的桥梁，也可以看作为控制器）  </p>
-<ul>
-<li>1、 M：模型层，主要负责业务数据相关；</li>
-<li>2、 V：视图层，顾名思义，负责视图相关，细分下来就是html+css层；</li>
-<li>3、 VM：V与M沟通的桥梁，负责监听M或者V的修改，是实现MVVM双向绑定的要点；</li>
-</ul>
-<img src="/2021/03/27/Vue_01/vue_01.png" class>
-
-<p><strong>Vue的生命周期</strong><br><img src="http://5b0988e595225.cdn.sohucs.com/images/20180922/bdeacadc565e49dea05d6e3f6c186cab.jpeg"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/随笔/Vue//" class="article-tag-list-link color4">Vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/27/Vue_01/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#var%E5%92%8Clet"><span class="toc-number">1.</span> <span class="toc-text">var和let</span></a></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
-
   
-    <article id="post-HTML_p" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/23/HTML_p/">HTML练习</a>
-    </h1>
   
 
-        
-        <a href="/2021/03/23/HTML_p/" class="archive-article-date">
-  	<time datetime="2021-03-23T03:07:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>表格的添加和删除</strong><br><strong>实现效果</strong><br><a href="HTML/table.html">HTML/table.html</a><br><strong>练习代码</strong></p>
-<pre><code>`
-&lt;head&gt;
-&lt;title&gt;Test&lt;/title&gt;
-&lt;style&gt;
-    table &#123;
-        border: 1px solid;
-        margin: auto;
-        width: 500px;
-    &#125;
-
-    td,
-    th &#123;
-        border: 1px solid;
-        text-align: center;
-    &#125;
-
-    div &#123;
-        text-align: center;
-        margin: 50px;
-    &#125;
-&lt;/style&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;div&gt;
-    &lt;input type=&quot;text&quot; id=&quot;0&quot; placeholder=&quot;请输入编号&quot;&gt;
-    &lt;input type=&quot;text&quot; id=&quot;1&quot; placeholder=&quot;请输入名字&quot;&gt;
-    &lt;input type=&quot;text&quot; id=&quot;2&quot; placeholder=&quot;请输入年龄&quot;&gt;
-    &lt;input type=&quot;button&quot; id=&quot;btn_add&quot; value=&quot;添加&quot;&gt;
-
-&lt;/div&gt;
-&lt;table id=&quot;table_1&quot;&gt;
-    &lt;caption&gt;信息表&lt;/caption&gt;
-    &lt;tr&gt;
-        &lt;th&gt;编号&lt;/th&gt;
-        &lt;th&gt;姓名&lt;/th&gt;
-        &lt;th&gt;年龄&lt;/th&gt;
-        &lt;th&gt;操作&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;1&lt;/td&gt;
-        &lt;td&gt;张三&lt;/td&gt;
-        &lt;td&gt;20&lt;/td&gt;
-        &lt;td&gt;
-            &lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;del_tr(this)&quot;&gt;删除&lt;/a&gt;
-        &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;李四&lt;/td&gt;
-        &lt;td&gt;21&lt;/td&gt;
-        &lt;td&gt;
-            &lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;del_tr(this)&quot;&gt;删除&lt;/a&gt;
-        &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;王五&lt;/td&gt;
-        &lt;td&gt;22&lt;/td&gt;
-        &lt;td&gt;
-            &lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;del_tr(this)&quot;&gt;删除&lt;/a&gt;
-        &lt;/td&gt;
-    &lt;/tr&gt;
-
-&lt;/table&gt;
-
-&lt;script&gt;
-    document.getElementById(&quot;btn_add&quot;).onclick = function () &#123;
-        var tr = document.createElement(&quot;tr&quot;);
-        for (var i = 0; i &lt; 3; i++) &#123;
-            var td = document.createElement(&quot;td&quot;);
-            td.appendChild(document.createTextNode(document.getElementById(i+&quot;&quot;).value));
-            tr.appendChild(td);
-        &#125;
-
-        var a = document.createElement(&quot;a&quot;);
-        a.setAttribute(&quot;href&quot;, &quot;javascript:void(0);&quot;);
-        a.setAttribute(&quot;onclick&quot;, &quot;del_tr(this)&quot;);
-        a.appendChild(document.createTextNode(&quot;删除&quot;));
-        var td_a = document.createElement(&quot;td&quot;);
-        td_a.appendChild(a);
-
-
-        tr.appendChild(td_a);
-        var table = document.getElementById(&quot;table_1&quot;);
-        table.appendChild(tr);
-    &#125;
-    function del_tr(obj) &#123;
-        var table = obj.parentNode.parentNode.parentNode;
-        var tr = obj.parentNode.parentNode;
-        table.removeChild(tr);
-    &#125;
-
-&lt;/script&gt;
-&lt;/body&gt;
-
-  `</code></pre>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">练习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/练//" class="article-tag-list-link color2">练</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/练/HTML//" class="article-tag-list-link color5">HTML</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/23/HTML_p/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
+  
 
   
+
   
 
 
@@ -759,8 +411,8 @@ for(var i=0;i&lt;btns.length;i++)&#123;
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
